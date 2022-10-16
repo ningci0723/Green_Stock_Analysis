@@ -6,13 +6,13 @@ Steve wants to conduct analysis on green stocks in 2017 and 2018 for his parents
 
 ### Purpose
 
-The purpose of this analysis is editing, or refactoring the Module 2 solution code to find a more efficient way to look conduct analysis and find the best stock by using VBA. This project is refactoring the code to make the VBA script run faster.
+The purpose of this analysis is editing, or refactoring the Module 2 solution code to find a more efficient way to conduct analysis and find the best stock by using VBA. This project is refactoring the code to make the VBA script run faster.
 
 
 ## Results
 
 ### Refactoring the Code
-In order to make the code more efficient, I created three different arrays which were tickerVolumes(12),tickerStartingPrices(12) and tickerEndingPrices(12). The tickers array created in the original code was used to establish the ticker symbol of a stock. I matched three different arrays which were tickerVolumes(12),tickerStartingPrices(12) and tickerEndingPrices(12) with the tickers array by using a variable named as tickerIndex. Here is the refactor code.
+In order to make the code more efficient, I created three different arrays which were tickerVolumes(12),tickerStartingPrices(12) and tickerEndingPrices(12). The tickers array created in the original code was used to establish the ticker symbol of a stock. I matched these three different arrays with the tickers array by using a variable named as tickerIndex. Below is the refactored code.
 
 #### Refactored Code
 
@@ -121,7 +121,7 @@ In order to make the code more efficient, I created three different arrays which
 
 ```
 
-  Below is the Original Code
+  Below is the Original Code.
 #### Original Code
   ```
   Initialize array of all tickers
@@ -201,10 +201,21 @@ End If
  Next i
   ```
 
-Below are the run time for Original code for 2017 and 2018
+Below are the run time for Original code for 2017 and 2018.
 ![Original_2017](https://github.com/ningci0723/Green_Stock_Analysis/blob/main/Original_2017.png)
 ![Orinigal_2018](https://github.com/ningci0723/Green_Stock_Analysis/blob/main/Original_2018.png)
 
-Below are the run time for refactored code for 2017 and 2018
+Below are the run time for refactored code for 2017 and 2018.
 ![Refactored_2017](https://github.com/ningci0723/Green_Stock_Analysis/blob/main/VBA_Challenge_2017.png)
 ![Refactored_2018](https://github.com/ningci0723/Green_Stock_Analysis/blob/main/VBA_Challenge_2018.png)
+
+Compared to above image, we can find that the refactored code runs faster than the original code.
+
+## Summary
+
+### Advantages and Disadvantages of refactoring Code
+There are several advantages for refactoring the code. Refactoring code can help to make the code more organized and more efficient by taking fewer steps and using less memory. Also it will benefit other future users as it will improve the logic of the code to make it more straightforward and easier to read.
+The disadvantage may include that imprecise refactoring could introduce new bugs and errors into the code. Also it may be time consuming, which may waste too much time when you try to edit and refactor the code.
+
+### Pros and Cons apply to refactoring the original VBA script
+The major advantage of refactoring the original VBA script is decreasing the run time and making the code more efficient. The major disadvantage is refactoring the original VBA script is time consuming. 
